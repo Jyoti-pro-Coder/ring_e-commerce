@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expensive Ring</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+      <!-- ====navbar=====  -->
+      <div class="container">
+        <header class="site-header">
+            <div class="header__content--flow">
+                <section class="header-content--left">
+                    <a href="#" class="brand-logo">
+                        <img src="https://websitedemos.net/jewellery-04/wp-content/uploads/sites/188/2018/04/site-logo-free-img.png" alt="">
+                        <!-- <span class="logo-text">LOGO</span> -->
+                    </a>
+                    <button class="nav-toggle">
+                        <span class="toggle--icon"></span>
+                    </button>
+                </section>
+                <section class="header-content--right">
+                    <nav class="header-nav" role="navigation">
+                        <ul class="nav__list" aria-expanded="false">
+                            <li class="list-item">
+                                <a class="nav__link" href="ring.html">Home</a>
+                            </li>
+                            <li class="list-item" id="active-nav">
+                                <a class="nav__link" href="about.html">About</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="nav__link" href="products.html">Products</a>
+                            </li>
+                         
+                            <li class="list-item">
+                                <a class="nav__link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </header>
+    </div>
+    
+<div class="about1">
+  
+<h1>A HERITAGE OF FOUR GENERATIONS</h1>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+<hr class="solid">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+
+</p>
+
+</div>
+<div class="about2">
+    <div id="overlay">
+        <div class="about2-text">
+        <h2>History</h2><br>
+<h1>ESTABLISHED IN 1918</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velitelit tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+</div>
+</div>
+</div>
+<div class="partner">
+    <h1>Our Partners</h1>
+    <div class="partner-logo-flex">
+<div class="partner-logo">
+
+<img src="https://websitedemos.net/jewellery-04/wp-content/uploads/sites/188/2021/03/logo3.png" alt="">
+</div>
+<div class="partner-logo">
+
+    
+</div>
+<div class="partner-logo">
+<img src="https://websitedemos.net/jewellery-04/wp-content/uploads/sites/188/2021/03/logo3.png" alt="">
+    
+</div>
+<div class="partner-logo">
+<img src="https://websitedemos.net/jewellery-04/wp-content/uploads/sites/188/2021/03/logo3.png" alt="">
+    
+</div>
+<div class="partner-logo">
+<img src="https://websitedemos.net/jewellery-04/wp-content/uploads/sites/188/2021/03/logo3.png" alt="">
+  
+</div>
+</div>
+</div>
+
+<div class="member">
+    <h1>Golden Citizen Membership</h1>
+    <p>Plus 5% Rewards and Free Shipping</p>
+    <button>Join Today</button>
+    </div>
+    <div class="video">
+        <div class="video-text">
+        <h2>Our Philosophy</h2>
+    <h1>Spectacular Creations That Give You A Distinct Look</h1>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</p>
+    
+<button>Learn More</button>
+</div>
+
+    <div class="containerr">
+        <div class="youtube-player" data-id="6qGiXY1SB68"></div>
+      </div>
+</div>
+    </div>
+    <footer>
+    
+        <p>Copyright © 2023 Jyoti Prajapati</p>
+    </footer>
+    
+    <script>    
+
+        let mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+                /* ====nav bar ====  */
+                const container = document.querySelector(".container");
+        const primaryNav = document.querySelector(".nav__list");
+        const toggleButton = document.querySelector(".nav-toggle");
+        
+        toggleButton.addEventListener("click", () => {
+            const isExpanded = primaryNav.getAttribute("aria-expanded");
+            primaryNav.setAttribute(
+                "aria-expanded",
+                isExpanded === "false" ? "true" : "false"
+            );
+        });
+        
+        container.addEventListener("click", (e) => {
+            if (!primaryNav.contains(e.target) && !toggleButton.contains(e.target)) {
+                primaryNav.setAttribute("aria-expanded", "false");
+            }
+        });
+
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+  var div,
+    n,
+    v = document.getElementsByClassName("youtube-player");
+  for (n = 0; n < v.length; n++) {
+    div = document.createElement("div");
+    div.setAttribute("data-id", v[n].dataset.id);
+    div.innerHTML = noThumb(v[n].dataset.id);
+    div.onclick = noIframe;
+    v[n].appendChild(div);
+  }
+});
+
+function noThumb(id) {
+  var thumb = '<img src="https://websitedemos.net/jewellery-04/wp-content/uploads/sites/188/2018/03/about-us-bg-free-img.jpg">',
+    play = '<div class="play"></div>';
+  return thumb.replace("ID", id) + play;
+}
+
+function noIframe() {
+  var iframe = document.createElement("iframe");
+  var embed =
+    "https://www.youtube-nocookie.com/embed/ID?autoplay=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0";
+  iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+  iframe.setAttribute("frameborder", "0");
+  iframe.setAttribute("allowfullscreen", "1");
+  iframe.setAttribute("allow", "autoplay; encrypted-media");
+  this.parentNode.replaceChild(iframe, this);
+}
+
+        
+          </script>
+</body>
+</html>
